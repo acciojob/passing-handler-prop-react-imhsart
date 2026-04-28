@@ -5,7 +5,7 @@ const Selection = ({applyColor}) => {
   const [bgColor, setBgColor] = useState('')
 
   return (
-    <div className="fix-box" style={{backgroundColor: `${bgColor}`}} onClick={() => {
+    <div className="fix-box" data-testid={bgColor} style={{backgroundColor: `${bgColor}`}} onClick={() => {
       applyColor((color) => setBgColor(color.background))
       }}>
       <h2 className="subheading">Selection</h2>
